@@ -1,0 +1,23 @@
+{
+	"name": "bideowego/dynamic-global-functions",
+	"description": "Allows dynamic declaration of named global functions at runtime",
+	"license": "MIT",
+	"keywords": ["dynamic", "global", "functions"],
+	"authors": [
+		{
+			"name": "Bideo Wego",
+			"email": "bideowego@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"config": {
+		"bin-dir": "bin"
+	},
+	"autoload": {
+		"psr-0": {
+			"BideoWego\\": "src/"
+		}
+	}
+}
