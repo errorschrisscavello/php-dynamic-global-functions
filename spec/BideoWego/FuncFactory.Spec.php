@@ -42,5 +42,15 @@ describe('FuncFactory', function()
 			});
 			expect(baz('baz'))->to->equal(['baz', 2, 3]);
 		});
+
+		it('benefits from the use keyword allowing variables in scope to be accessed', function()
+		{
+			$biz = 'biz';
+			FuncFactory::create('biz', function() use ($biz)
+			{
+				return $biz;
+			});
+			expect(biz())->to->equal('biz');
+		});
 	});
 });
