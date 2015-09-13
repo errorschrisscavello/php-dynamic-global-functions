@@ -7,7 +7,7 @@ class FuncPool
 
 	public static function get($key)
 	{
-		self::ensureIsSetFunctions();
+		self::ensurePoolExists();
 		$value = null;
 		if (isset(self::$pool[$key])) {
 			$value = self::$pool[$key]['callable'];
@@ -17,7 +17,7 @@ class FuncPool
 
 	public static function set($key, $value)
 	{
-		self::ensureIsSetFunctions();
+		self::ensurePoolExists();
 		if (!isset(self::$pool[$key])) {
 			self::$pool[$key]['defaults'] = self::getDefaults($value);
 			self::$pool[$key]['callable'] = $value;
@@ -34,7 +34,7 @@ class FuncPool
 		}
 	}
 
-	private static function ensureIsSetFunctions()
+	private static function ensurePoolExists()
 	{
 		if (!isset(self::$pool)) {
 			self::$pool = [];
