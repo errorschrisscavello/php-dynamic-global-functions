@@ -1,6 +1,6 @@
 {
-	"name": "bideowego/dynamic-global-functions",
-	"description": "Allows dynamic declaration of named global functions at runtime",
+	"name": "bideowego/php-dynamic-global-functions",
+	"description": "Allows dynamic declaration of global functions from string names and closures",
 	"license": "MIT",
 	"keywords": ["dynamic", "global", "functions"],
 	"authors": [

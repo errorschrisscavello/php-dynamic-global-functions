@@ -5,7 +5,7 @@ use BideoWego\FuncFactory;
 
 describe('FuncFactory', function()
 {
-	describe('->create', function()
+	describe('::create', function()
 	{
 		it('defines a function callable in the global namespace', function()
 		{

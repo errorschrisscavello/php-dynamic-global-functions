@@ -5,7 +5,7 @@ use BideoWego\FuncPool;
 
 describe('FuncPool', function()
 {
-	describe('->get', function()
+	describe('::get', function()
 	{
 		it('returns the function stored at the given key', function()
 		{
@@ -18,7 +18,7 @@ describe('FuncPool', function()
 		});
 	});
 
-	describe('->set', function()
+	describe('::set', function()
 	{
 		it('sets the key to the given key and value to the given function', function()
 		{
