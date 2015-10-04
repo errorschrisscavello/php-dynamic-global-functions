@@ -2,6 +2,7 @@
 	"name": "bideowego/php-dynamic-global-functions",
 	"description": "Allows dynamic declaration of global functions from string names and closures",
 	"license": "MIT",
+	"homepage": "https://github.com/BideoWego/php-dynamic-global-functions",
 	"keywords": ["dynamic", "global", "functions"],
 	"authors": [
 		{

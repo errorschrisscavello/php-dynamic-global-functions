@@ -1,4 +1,4 @@
-# Bideo Wego Dynamic Global Functions
+# [PHP Dynamic Global Functions](https://github.com/BideoWego/php-dynamic-global-functions)
 
 A small PHP library that allows the dynamic creation of functions in the global namespace at runtime.
 Create a function given a string name and closure. Then call it!
